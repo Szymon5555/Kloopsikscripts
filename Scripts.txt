@@ -15,11 +15,14 @@ local TextLabel_3 = Instance.new("TextLabel")
 
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 Frame.Position = UDim2.new(0.216886118, 0, 0.320991874, 0)
 Frame.Size = UDim2.new(0, 438, 0, 248)
+Frame.Active = true
+Frame.Draggable = true
 
 Skryptpsx1.Name = "Skrypt psx 1"
 Skryptpsx1.Parent = Frame
@@ -32,7 +35,7 @@ Skryptpsx1.Text = "Auto farm"
 Skryptpsx1.TextColor3 = Color3.fromRGB(0, 0, 0)
 Skryptpsx1.TextSize = 14.000
 Skryptpsx1.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('loadstring(game:HttpGet("https://milkup.info/script/PetSimulatorX/"))() '),true))()
+	loadstring(game:HttpGet(("https://milkup.info/script/PetSimulatorX/"),true))()
 end)
 
 Skryptpsx2.Name = "Skrypt psx 2"
@@ -46,7 +49,7 @@ Skryptpsx2.Text = "Visual changer"
 Skryptpsx2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Skryptpsx2.TextSize = 14.000
 Skryptpsx2.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet(('loadstring(game:HttpGet("https://raw.githubusercontent.com/Psx0/C/main/Visual", true))()'),true))()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Psx0/C/main/Visual"),true))()
 end)
 
 
@@ -57,7 +60,7 @@ TextLabel.Size = UDim2.new(0, 438, 0, 50)
 TextLabel.Font = Enum.Font.Unknown
 TextLabel.Text = "Script Made By Koczfa"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 33.000
+TextLabel.TextSize = 31.000
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
